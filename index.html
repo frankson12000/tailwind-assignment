@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/output.css">
-
+      <!--------------font awesome cdn------------>
     <link rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 
     <title>Tailwind-Assignment</title>
 </head>
 <body>
+      <!-------------Header-------------->
   <header class="h-14 border-b border-white/10 sticky top-0 z-100 bg-dark-blue text-white/70">
     <nav class="h-full flex items-center justify-between px-8 relative">
       <div class="flex gap-1.5 items-center">
@@ -19,7 +20,7 @@
         </span>
         <div class="text-lg">Nexus</div>
       </div>
-      <ul class="hidden md:flex lg:flex gap-8">
+      <ul class="hidden md:flex lg:flex xl:flex gap-8">
         <li>
           <a href="#home">Home</a>
         </li>
@@ -33,10 +34,10 @@
           <a href="#contact">Contact</a>
         </li>
       </ul> 
-      <button class="px-4 py-1 bg-light-blue rounded-lg hidden md:flex lg:flex">Get Started</button>
+      <button class="px-4 py-1 bg-light-blue rounded-lg hidden md:flex ">Get Started</button>
 
-      <!------Mobile version-->
-      <div class="md:hidden lg:hidden flex flex-col">
+      <!------Mobile version------->
+      <div class="md:hidden flex flex-col">
         <button>
           <i class="fa-solid fa-bars"></i>
         </button>
@@ -62,37 +63,38 @@
   </header>
 
   <main>
+          <!-------------Hero Section---------->
     <section class="w-full h-[calc(100vh-3.5rem)]">
-      <div class="h-full p-6 pb-6 md:pt-18 md:px-20 md:pb-10 lg:pt-20 lg:px-24 lg:pb-12 bg-dark-blue text-white/70 flex flex-col gap-6 md:gap-10 md:flex-row lg:gap-12">
-        <div class="md:pt-12 lg:pt-16">
-          <div class="flex gap-1 text-4xl md:text-4xl lg:text-7xl font-semibold">
-          <h1>Build Your</h1>
-          <span class="text-light-blue/48">Digital</span>
+      <div class="h-full p-6 pb-6 md:pt-18 md:px-20 md:pb-10 xl:pt-20 xl:px-24 xl:pb-12 bg-dark-blue text-white/70 flex flex-col gap-6 md:gap-10 md:items-center lg:flex-row xl:justify-between">
+        <div class=" pt-8 md:pt-10 xl:pt-16">
+          <div class="flex gap-1.5">
+          <h1 class="text-4xl md:text-6xl lg:text-5xl">Build Your</h1>
+          <span class="text-light-blue/48 text-4xl md:text-6xl lg:text-5xl">Digital</span>
           </div> 
-          <div class="text-4xl md:text-4xl lg:text-7xl font-semibold">Future</div>
-          <p class="mt-4 md:text- lg:text-xl">Transform your bussiness with cutting-edge solutions</p>
-          <p class="lg:text-xl">that drive growth and innovation in the digital</p>
-          <p class="lg:text-xl">landscape.</p>
-          <div class="mt-6 flex gap-2">
-            <button class="bg-light-blue py-2 px-5 rounded-md text-sm lg:text-xl">Start Your Journey</button>
-            <button class="border border-white/10 py-2 px-5 rounded-md text-sm lg:text-xl">Learn More</button>
+          <div class="text-4xl md:text-6xl lg:text-5xl xl:text-7xl font-semibold">Future</div>
+          <p class="pt-3 text-lg md:text-xl md:pt-8 xl:text-xl">Transform your bussiness with cutting-edge solutions</p>
+          <p class="text-lg md:text-xl xl:text-xl">that drive growth and innovation in the digital</p>
+          <p class="text-lg md:text-xl xl:text-xl">landscape.</p>
+          <div class="pt-4 flex gap-2 md:pt-8">
+            <button class="bg-light-blue py-2 px-5 rounded-md text-sm md:text-lg xl:text-xl">Start Your Journey</button>
+            <button class="border border-white/10 py-2 px-5 rounded-md text-sm md:text-lg xl:text-xl">Learn More</button>
           </div>
         </div>
         <div>
-          <img class="h-72 w-85 md:w-100 md:h-90 lg:w-180 lg:h-120" src="./image/hero-image.png">
+          <img class="rounded-3xl pt-3 h-72 w-85 md:pt-8  md:w-120 md:h-110 xl:w-180 xl:h-120" src="./image/hero-image.png">
         </div>
       </div>
     </section>
-
+           <!-------Our Services Section--------->
     <section class="bg-blue-shade text-white/70">
       <div class="flex flex-col items-center gap-6 lg:gap-12 pt-12">
         <div class=" flex flex-col items-center">
-          <h2 class="text-2xl lg:text-4xl font-bold">Our Services</h2>
-          <p class="text-xl px-4 pt-4">
-            We provide comprehensive solutions to help your bussiness thrive in the digital age
+          <h2 class="text-2xl md:text-4xl font-bold">Our Services</h2>
+          <p class="text-xl px-8 pt-4 md:text-2xl md:px-24 ">
+            We provide comprehensive solutions to help your bussiness thrive in the digital age.
           </p>
         </div>
-        <div class=" flex flex-col lg:flex-row gap-4 lg:gap-8">
+        <div class=" flex flex-col gap-4 px-8 md:pt-8 pb-12 lg:flex-row lg:px-8 lg:gap-8">
           <div class="border border-white/4 p-8 lg:p-16 rounded-xl">
             <span class="p-3 lg:p-4 bg-light-blue text-white/70 rounded-md"><i class="fa-solid fa-code"></i></span>
             <h3 class="pt-8 text-2xl font-semibold lg:pt-12 lg:text-3xl">Web Development</h3>
@@ -117,6 +119,26 @@
           </div>
         </div>
       </div>
+    </section>
+      <!-------------About Section----------->
+    <section class="bg-dark-blue text-white/70">
+        <div class="p-12 flex flex-col items-center gap-8 md:p-24 lg:flex-row lg:px-10 lg:gap-12 xl:px-18">
+          <img class="rounded-3xl lg:h-90 lg:w-160" src="./image/about-image.png">
+          <div>
+            <h2 class="text-2xl md:text-4xl font-bold md:pt-6">About Nexus</h2>
+            <p class="pt-4 md:text-2xl lg:text-xl lg:max-w-2xl">We are a forward-thinking technology company dedicated to helping businesses navigate the digital transformation journey. With years of experience and a passion for innovation, we deliver solutions that matter.</p>
+            <div class="pt-4 flex gap-24 xl:gap-88">
+              <div>
+                <h3 class="text-light-blue text-2xl font-bold">150+</h3>
+                <p class="text-sm">Projects Completed</p>
+              </div>
+              <div>
+                <h3 class="text-green-col text-2xl font-bold">98%</h3>
+                <p class="text-sm">Client Satisfaction</p>
+              </div>
+            </div>
+          </div>
+        </div>
     </section>
   </main>
 </body>
