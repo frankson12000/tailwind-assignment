@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/output.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css
-">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 
     <title>Tailwind-Assignment</title>
 </head>
 <body>
   <header class="h-14 border-b border-white/10 sticky top-0 z-100 bg-dark-blue text-white/70">
-    <nav class="h-full flex items-center justify-between px-8">
+    <nav class="h-full flex items-center justify-between px-8 relative">
       <div class="flex gap-1.5 items-center">
         <span class="p-1 bg-light-blue rounded-lg text-xs">
           <i class="fa-solid fa-bolt"></i>
         </span>
         <div class="text-lg">Nexus</div>
       </div>
-      <ul class="flex gap-8">
+      <ul class="hidden lg:flex gap-8">
         <li>
           <a href="#home">Home</a>
         </li>
@@ -33,42 +33,53 @@
           <a href="#contact">Contact</a>
         </li>
       </ul> 
-      <button class="px-4 py-1 bg-light-blue rounded-lg">Get Started</button>
+      <button class="px-4 py-1 bg-light-blue rounded-lg hidden lg:flex">Get Started</button>
+
       <!------Mobile version-->
-      <div class="lg:hidden">
+      <div class="lg:hidden flex flex-col">
         <button>
           <i class="fa-solid fa-bars"></i>
         </button>
-        <ul>
+        <div class="absolute top-full right-0 flex-col border-r border-l border-b border-white/10 px-4 pb-6 pt-16 text-sm bg-white/80 text-black/80 hidden">
+        <ul class="flex flex-col gap-2 w-3/5 max-w-60 h-[calc(100vh-3.5rem)]">
           <li>
             <a href="#home">Home</a>
+            </li>
+            <li>
             <a href="#services">Services</a>
+            </li>
+            <li>
             <a href="#about">About</a>
+            </li>
+            <li>
             <a href="#contact">Contact</a>
           </li>
         </ul> 
-        <button>Get Started</button>
+        <button">Get Started</button>
+        </div>
       </div>
     </nav>
   </header>
 
   <main>
-    <section class="w-full h-[calc(100vh-4.5rem)]">
-      <div class="pt-20 pl-12 bg-dark-blue text-white/70">
+    <section class="w-full h-[calc(100vh-3.5rem)]">
+      <div class="h-full p-6 pb-6 lg:pt-20 lg:px-24 lg:pb-12 bg-dark-blue text-white/70 flex flex-col gap-6 lg:gap-12 lg:flex-row">
         <div>
-          <div class="flex gap-1 text-4xl font-semibold">
+          <div class="flex gap-1 text-4xl lg:text-7xl font-semibold">
           <h1>Build Your</h1>
           <span class="text-light-blue/48">Digital</span>
           </div> 
-          <div class="text-4xl font-semibold">Future</div>
-          <p class="mt-4">Transform your bussiness with cutting-edge solutions that drive growth and innovation in the digital landscape.</p>
-          <div>
-            <button>Start Your Journey</button>
-            <button>Learn More</button>
+          <div class="text-4xl lg:text-7xl font-semibold">Future</div>
+          <p class="mt-4 lg:text-xl">Transform your bussiness with cutting-edge solutions</p>
+          <p class="lg:text-xl">that drive growth and innovation in the digital</p>
+          <p class="lg:text-xl">landscape.</p>
+          <div class="mt-6 flex gap-2">
+            <button class="bg-light-blue py-2 px-5 rounded-md text-sm lg:text-xl">Start Your Journey</button>
+            <button class="border border-white/10 py-2 px-5 rounded-md text-sm lg:text-xl">Learn More</button>
           </div>
         </div>
         <div>
-          <img src="" alt="">
+          <img class="h-72 w-85 lg:w-180 lg:h-120" src="./image/hero-image.png">
         </div>
       </div>
     </section>
