@@ -35,7 +35,8 @@
           <a href="#contact">Contact</a>
         </li>
       </ul> 
-      <button class="px-4 py-1 md:py-1.5 lg:py-2 lg:px-6 bg-light-blue rounded-lg hidden md:flex md:text-xl ">Get Started</button>
+      <button class="px-4 py-1 md:py-1 lg:py-2 lg:px-6 bg-light-blue rounded-lg hidden md:flex md:text-xl ">Get Started
+      </button>
 
       <!-------------Mobile version------------->
       <div class="md:hidden flex flex-col">
@@ -43,7 +44,7 @@
           <i class="fa-solid fa-bars"></i>
         </button>
         <div  class="absolute top-full right-0 flex-col border-r border-l border-b border-white/10 px-4 pb-6 pt-16  text-sm bg-white/80 text-black/80 hidden">
-          <ul class="flex flex-col gap-2 w-3/5 max-w-60 h-[calc(100vh-3.5rem)]">
+          <ul class="flex flex-col gap-2 w-3/5 max-w-60 h-[calc(100vh-3.5rem)] md:h-[calc(100vh-5rem)]">
             <li>
               <a href="#home">Home</a>
             </li>
@@ -66,92 +67,138 @@
   <main>
     <!-------------Hero Section--------------------->
     <section class="w-full h-[calc(100vh-3.5rem)]">
-      <div class="h-full p-6 xl:pt-20 xl:px-24 xl:pb-12 bg-dark-blue text-white/70 flex flex-col gap-6 md:gap-10 md:items-center lg:flex-row xl:justify-between">
-        <div class="pt-4 xl:pt-16">
-          <div class="flex gap-1.5">
-            <h1 class="text-4xl md:pt-6 md:text-7xl lg:text-5xl">
+      <div class="h-full px-6 bg-dark-blue text-white/70 flex flex-col gap-6 md:gap-10 md:items-center xl:flex-row xl:justify-between xl:p-12 2xl:p-16">
+        <div class="pt-12">
+          <div class="flex gap-2.5">
+            <h1 class="text-4xl md:pt-6 md:text-6xl xl:text-6xl 2xl:text-7xl font-bold">
             Build Your
             </h1>
-            <span class="text-light-blue/48 text-4xl md:pt-6 md:pl-4 md:text-7xl lg:text-5xl">
-              Digital
+            <span class="text-light-blue/48 text-4xl md:pt-6 md:pl-4 md:text-6xl xl:text-6xl 2xl:text-7xl font-bold">
+            Digital
             </span>
-            </div> 
-            <div class="text-4xl md:text-7xl lg:text-5xl xl:text-7xl font-semibold">Future</div>
-            <p class="pt-3 text-lg md:text-2xl md:pt-8 xl:text-xl">
-              Transform your bussiness with cutting-edge solutions
-            </p>
-            <p class="text-lg md:text-2xl xl:text-xl">
-              that drive growth and innovation in the digital
-            </p>
-            <p class="text-lg md:text-2xl xl:text-xl">
-              landscape.
-            </p>
-            <div class="pt-4 flex gap-2 md:pt-8">
-            <button class="bg-light-blue py-2 px-5 rounded-md text-sm md:text-xl xl:text-xl">
+          </div> 
+          <div class="text-4xl md:text-6xl xl:text-6xl 2xl:text-7xl font-bold">
+            Future
+          </div>
+          <p class="pt-3 text-lg md:text-2xl md:pt-8 xl:text-3xl">
+            Transform your bussiness with cutting-edge solutions
+          </p>
+          <p class="text-lg md:text-2xl xl:text-3xl">
+            that drive growth and innovation in the digital
+          </p>
+          <p class="text-lg md:text-2xl xl:text-3xl">
+            landscape.
+          </p>
+          <div class="pt-4 flex gap-2 md:gap-8 md:pt-8">
+            <button class="bg-light-blue py-2 px-5 rounded-md text-sm md:py-4 md:text-2xl xl:text-2xl">
               Start Your Journey
             </button>
-            <button class="border border-white/10 py-2 px-5 rounded-md text-sm md:text-xl xl:text-xl">
+            <button class="border border-white/10 py-2 px-5 rounded-md text-sm md:py-4 md:text-2xl xl:text-2xl">
               Learn More
             </button>
           </div>
-        </div>
+        </div> 
         <div>
-          <img class="rounded-3xl pt-3 h-72 w-85 md:pt-8  md:w-160 md:h-140 xl:w-180 xl:h-120" src="./image/hero-image.png">
+          <img class="rounded-3xl pt-3 h-76 w-85   md:w-145 md:h-100 xl:mt-6 xl:w-180 xl:h-140" src="./image/hero-image.png">
         </div>
       </div>
     </section>
 
     <!-------------Our Services Section---------------->
     <section class="bg-blue-shade text-white/70">
-      <div class="flex flex-col items-center gap-6  lg:gap-12 pt-8">
+      <div class="flex flex-col gap-6 items-center pt-8 md:pt-12 ">
         <div class=" flex flex-col items-center">
-          <h2 class="text-2xl md:text-4xl font-bold">Our Services</h2>
-          <p class="text-xl px-8 pt-4 md:text-2xl md:px-24">
+          <h2 class="text-2xl md:text-4xl xl:text-5xl font-bold">
+            Our Services
+          </h2>
+          <p class="text-lg px-8 pt-4 md:text-2xl md:px-24 xl:text-3xl xl:max-w-5xl">
             We provide comprehensive solutions to help your bussiness thrive in the digital age.
           </p>
         </div>
-        <div class=" flex flex-col gap-4 px-8 md:w-160 md:pt-8 pb-12 lg:flex-row lg:px-8 lg:gap-8">
-          <div class="bg-white/4 border border-white/4 p-8 lg:p-16 rounded-xl">
-            <span class="p-3 lg:p-4 bg-light-blue text-white/70 rounded-md"><i class="fa-solid fa-code"></i>
+        <div class=" flex flex-col gap-4 px-8 md:w-160 md:pt-8 pb-8 xl:flex-row xl:px-12 xl:pb-14 xl:w-7xl 2xl:w-360 2xl:px-6 justify-between">
+          <div class="bg-white/4 border border-white/4 p-8 md:px-12 md:py-11 rounded-xl">
+            <span class="p-3 md:p-4 bg-light-blue text-white/70 rounded-md"><i class="fa-solid fa-code"></i>
             </span>
-            <h3 class="pt-8 text-2xl font-semibold lg:pt-12 lg:text-3xl">Web Development</h3>
-            <p class="text-xl pt-4">Custom websites and web</p>
-            <p class="text-xl">applications built with modern</p>
-            <p class="text-xl">technologies for optional</p>
-            <p class="text-xl">performance.</p>
+            <h3 class="pt-8 text-xl font-semibold md:text-3xl">
+              Web Development
+            </h3>
+            <p class="text-lg pt-4 md:text-2xl">
+              Custom websites and web
+            </p>
+            <p class="text-lg md:text-2xl">
+              applications built with modern
+            </p>
+            <p class="text-lg md:text-2xl">
+              technologies for optional
+            </p>
+            <p class="text-lg md:text-2xl">
+              performance.
+            </p>
           </div>
-          <div class="bg-white/4 border border-white/4 p-8 lg:p-16 rounded-xl">
-            <span class="p-3 lg:p-4 bg-green-col text-white/70 rounded-md"><i class="fa-solid fa-mobile-screen-button"></i></span>
-            <h3 class="pt-8 text-2xl font-semibold lg:pt-12 lg:text-3xl">Mobile Apps</h3>
-            <p class="text-xl pt-4">Native and cross-platform mobile</p>
-            <p class="text-xl">applications that deliver exceptional</p>
-            <p class="text-xl">user experiences.</p>
+          <div class="bg-white/4 border border-white/4 p-8 md:px-12 md:py-11 rounded-xl">
+            <span class="p-3 md:p-4 bg-green-col text-white/70 rounded-md">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </span>
+            <h3 class="pt-8 text-xl font-semibold md:text-3xl">
+              Mobile Apps
+            </h3>
+            <p class="text-lg md:text-2xl pt-4">
+              Native and cross-platform mobile
+            </p>
+            <p class="text-lg md:text-2xl">
+              applications that deliver exceptional
+            </p>
+            <p class="text-lg md:text-2xl">
+              user experiences.
+            </p>
           </div>
-          <div class="bg-white/4 border border-white/4 p-8 lg:p-16 rounded-xl">
-            <span class="p-3 lg:p-4 bg-purple-col text-white/70 rounded-md"><i class="fa-solid fa-chart-line"></i></span>
-            <h3 class="pt-8 text-2xl font-semibold lg:pt-12 lg:text-3xl">Digital Marketing</h3>
-            <p class="text-xl pt-4">Strategic marketing campaigns that</p>
-            <p class="text-xl">boost your online presence and drive</p>
-            <p class="text-xl">conversions.</p>
+          <div class="bg-white/4 border border-white/4 p-8 md:px-12 md:py-11 rounded-xl">
+            <span class="p-3 md:p-4  bg-purple-col text-white/70 rounded-md">
+              <i class="fa-solid fa-chart-line"></i>
+            </span>
+            <h3 class="pt-8 text-xl font-semibold md:text-3xl ">
+              Digital Marketing
+            </h3>
+            <p class="text-lg pt-4 md:text-2xl">
+              Strategic marketing campaigns that
+            </p>
+            <p class="text-lg md:text-2xl">
+              boost your online presence and drive
+            </p>
+            <p class="text-lg md:text-2xl">
+              conversions.
+            </p>
           </div>
         </div>
       </div>
     </section>
       <!-------------About Section----------->
     <section class="bg-dark-blue text-white/70">
-        <div class="p-8 flex flex-col items-center gap-8 md:p-24 lg:flex-row lg:px-10 lg:gap-12 xl:px-18">
-          <img class="rounded-3xl lg:h-90 lg:w-160" src="./image/about-image.png">
+        <div class="p-8 flex flex-col items-center gap-8 md:px-24 md:py-12 lg:flex-row lg:px-10 lg:gap-12 xl:px-12 2xl:py-14 2xl:pl-16">
+          <img class="rounded-3xl lg:h-90 lg:w-160 2xl:h-100 2xl:w-150" src="./image/about-image.png">
           <div>
-            <h2 class="text-2xl md:text-4xl font-bold md:pt-6">About Nexus</h2>
-            <p class="pt-4 md:text-2xl lg:text-xl lg:max-w-2xl">We are a forward-thinking technology company dedicated to helping businesses navigate the digital transformation journey. With years of experience and a passion for innovation, we deliver solutions that matter.</p>
+            <h2 class="text-2xl md:text-4xl font-bold">
+              About Nexus
+            </h2>
+            <p class="pt-4 md:text-2xl lg:text-xl lg:max-w-2xl">
+              We are a forward-thinking technology company dedicated to helping businesses navigate the digital transformation journey. With years of experience and a passion for innovation, we deliver solutions that matter.
+            </p>
             <div class="pt-4 flex gap-24 xl:gap-88">
               <div>
-                <h3 class="text-light-blue text-2xl font-bold">150+</h3>
-                <p class="text-sm">Projects Completed</p>
+                <h3 class="text-light-blue text-2xl md:text-3xl font-bold">
+                  150+
+                </h3>
+                <p class="text-sm md:text-lg">
+                  Projects Completed
+                </p>
               </div>
               <div>
-                <h3 class="text-green-col text-2xl font-bold">98%</h3>
-                <p class="text-sm">Client Satisfaction</p>
+                <h3 class="text-green-col text-2xl md:text-3xl font-bold">
+                  98%
+                </h3>
+                <p class="text-sm md:text-lg">
+                  Client Satisfaction
+                </p>
               </div>
             </div>
           </div>
@@ -160,60 +207,72 @@
     <!----------------Contact Section------------->
      <section class="bg-blue-shade text-white/70">
       <div class="pt-8 px-8 pb-12 flex flex-col  gap-4">
-        <div>
-          <h2 class="text-2xl font-bold">
+        <div class="">
+          <h2 class="flex justify-center text-2xl md:text-3xl font-bold">
             Get In Touch
           </h2>
-          <p class="pt-4">Ready to start your project? Let's discuss how we can help you achieve your goals.</p>
+          <p class="pt-4 md:text-2xl">
+            Ready to start your project? Let's discuss how we can help you achieve your goals.
+          </p>
         </div>
-        <div class="bg-white/4 border border-white/4 pl-4 pr-8 pt-4 pb-4  rounded-lg">
-        <div class="flex flex-col gap-2">
-          <div class="flex gap-2">
+        <div class="bg-white/4 border border-white/4 px-6 pt-4 pb-4  rounded-lg md:px-14 xl:flex xl:w-250 
+         2xl:w-280">
+        <div class="flex flex-col gap-2 2xl:px-8">
+          <div class="flex gap-2 md:text-2xl 2xl:pt-8">
             <span class="text-light-blue">
               <i class="fa-solid fa-envelope"></i>
             </span>
-            <p>hello@nexus.com</p>
+            <p>
+              hello@nexus.com
+            </p>
           </div>
-          <div class="flex gap-2">
+          <div class="flex gap-2 md:text-2xl">
             <span class="text-light-blue">
               <i class="fa-solid fa-phone"></i>
             </span>
-            <p>+1(555) 123-4567</p>
+            <p>
+              +1(555) 123-4567
+            </p>
           </div>
-          <div class="flex gap-2">
+          <div class="flex gap-2 md:text-2xl">
             <span class="text-light-blue">
               <i class="fa-solid fa-location-dot"></i>
             </span>
-            <p>123 Business Ave, Tech City</p>
+            <p>
+              123 Business Ave, Tech City
+            </p>
           </div>
         </div>
         <form>
           <div class="flex flex-col gap-2 pt-4 rounded-lg text-xs">
-            <input type="text" placeholder="Your Name" class=" bg-white/8 p-1 rounded-sm w-65">
-            <input type="email" placeholder="Your Email" class="bg-white/8 p-1 rounded-sm w-65">
+            <input type="text" placeholder="Your Name" class=" bg-white/8 p-1 rounded-sm w-68.5 md:pl-8 md:text-lg md:w-145 md:p-4">
+            <input type="email" placeholder="Your Email" class="bg-white/8 p-1 rounded-sm w-68.5 md:pl-8 md:text-lg md:w-145 md:p-4">
           </div>
-          <textarea name="messsage" placeholder="Your Message" class="bg-white/8 rounded-lg pl-2 pt-2 mt-4 w-65 h-20 text-sm"></textarea>
-          <div class="bg-light-blue w-65 rounded-sm p-1.5 text-lg flex justify-center mt-4">Send Message</div>
+          <textarea name="messsage" placeholder="Your Message" class="bg-white/8 rounded-lg pl-2 pt-2 mt-4 w-68.5 h-20 text-sm md:h-40 md:pl-8 md:text-lg md:w-145 md:p-4">
+          </textarea>
+          <div class="bg-light-blue w-68.5 rounded-sm p-1.5 text-lg flex justify-center mt-4 xl:w-145">Send Message</div>
         </form>
         </div>
-
       </div>
-     </section>
-
-     <section>
+    </section>
+    <!-----------------Footer Section---------------------->
+    <section>
       <footer class="bg-blue-shade">
-        <div class="bg-white/4 flex justify-between p-4">
+        <div class="bg-white/4 flex justify-between p-4 xl:px-16">
           <div class="flex gap-1.5 items-center text-white">
-            <span class="p-1 bg-light-blue  rounded-lg  text-xs">
+            <span class="p-1 bg-light-blue  rounded-lg text-xs md:text-xl">
              <i class="fa-solid fa-bolt"></i>
             </span>
-          <div class="text-sm">Nexus</div>
+            <div class="text-sm md:text-xl">
+              Nexus
+            </div>
           </div>
-          <div class="text-xs flex items-center text-white/70">
+          <div class="text-xs flex items-center text-white/70 md:text-xl">
             <p> 
-              &copy; 2024 Nexus. All right reserved.</p>
+              &copy; 2024 Nexus. All right reserved.
+            </p>
           </div>
-          <div class="text-white/70">
+          <div class="text-white/70 md:text-xl">
             <span>
               <i class="fa-brands fa-twitter"></i>
             </span>
@@ -226,7 +285,7 @@
           </div>
         </div>
       </footer>
-     </section>
+    </section>
   </main>
 </body>
 </html>
